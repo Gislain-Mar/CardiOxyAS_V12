@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CardiOxy</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="title_preference_mimi">CardiOxy Bluetooth</string>
+    <string name="title_Reception">Reception</string>
+    <string name="title_Envoi">Envoi</string>
+    <string name="title_Graphics">Graphique</string>
+    <string name="textconnexionBT">Veuillez vous connecter à un capteur</string>
+    <string name="textconnexionTCP">Veuillez vous connecter à un serveur</string>
+
+</resources>

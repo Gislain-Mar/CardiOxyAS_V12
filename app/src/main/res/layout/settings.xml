@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".settings.SettingsActivity">
+
+    <!-- Affichage des légendes -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'appareil : "
+        android:textSize="@dimen/moyen"/>
+    <!-- Saisie de l'adresse ou ID -->
+
+    <EditText
+        android:id="@+id/bluetooth_ident"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Serveur : "
+        android:textSize="@dimen/moyen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/ip_ident"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="adresse IP"
+        android:autoText="true" />
+
+    <EditText
+        android:id="@+id/port_ident"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:hint="Port"
+        android:inputType="number"
+        android:autoText="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Bouton de sauvegarde -->
+        <Button
+            android:id="@+id/btscan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:text="Scan" />
+
+        <Button
+            android:id="@+id/settingssave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:enabled="true"
+            android:text="Enregistrer" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reception.ReceptionFragment">
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="15dp"
+        android:text="Connexion" />
+
+    <TextView
+        android:id="@+id/textInfoConnexion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textconnexionBT"
+        android:textSize="@dimen/moyen"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_margin="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Fréquence cardiaque (bps) : "
+            android:textSize="@dimen/moyen"/>
+
+        <TextView
+            android:id="@+id/ValueTextViewFC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/moyen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Oxygène dans le sang (%) : "
+            android:textSize="@dimen/moyen"/>
+
+        <TextView
+            android:id="@+id/ValueTextViewO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/moyen"/>
+    </LinearLayout>
+
+
+</LinearLayout>
